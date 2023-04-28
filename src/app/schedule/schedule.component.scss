@@ -1,0 +1,105 @@
+
+$font-stack: Poppins;
+$font-bold: Poppins, Extrabold;
+$primary-color: #1B277B;
+$second-color: #ffffff;
+$third-color: #AB8713;
+$card-day-color: #035A76;
+$card-saturday-color: #690F8E;
+$card-sunday-color:#B00024;
+.schedule-container {
+  background-color: #1B277B;
+  color: white;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.schedule-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.schedule-title h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.schedule-title h3 {
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.schedule-info {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.schedule-day {
+  background-color: #035A76;
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  flex-basis: calc(33.33% - 40px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+.schedule-saturday {
+  background-color: #690F8E;
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  flex-basis: calc(33.33% - 40px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+.schedule-sunday {
+  background-color: #B00024;
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  flex-basis: calc(33.33% - 40px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+
+.schedule-day:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+.schedule-saturday:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+.schedule-sunday:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+
+.schedule-saturday,
+.schedule-sunday,
+.schedule-day h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.schedule-saturday,
+.schedule-sunday,
+.schedule-day p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.schedule-description {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .shedule-info{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
